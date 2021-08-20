@@ -13,9 +13,9 @@ export const Indicator = styled.div`
   width: 14px;
 
   border-radius: 7px;
-  border: 2px solid #004d61;
 
-  /*background-color: #004d61;*/
+  ${(props) => (props.value ? "background-color: #004d61;" : "")}
+  border: 2px solid #004d61;
 
   margin-right: 8px;
   cursor: pointer;
