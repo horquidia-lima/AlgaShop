@@ -1,4 +1,5 @@
 import React from "react";
+import Checkbox from "../../shared/Checkbox/Checkbox";
 import AppContainer from "../AppContainer/AppContainer";
 import AppHeader from "../AppHeader/AppHeader";
 import { Container, Wrapper } from "./App.styles";
@@ -10,12 +11,13 @@ function App() {
         <AppHeader />
         <AppContainer
           left={
-            <div style={{ backgroundColor: "red" }}>productos disponibles</div>
+            <div>
+              productos disponibles
+              <Checkbox />
+            </div>
           }
-          middle={
-            <div style={{ backgroundColor: "green" }}>su lista de compras</div>
-          }
-          right={<div style={{ backgroundColor: "blue" }}>estatisticas</div>}
+          middle={<div>su lista de compras</div>}
+          right={<div>estatisticas</div>}
         />
       </Container>
     </Wrapper>
