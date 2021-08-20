@@ -1,12 +1,12 @@
 import React from "react";
-
+import { Wrapper } from "./AppContainer.styles";
 function AppContainer({ left, middle, right }) {
   return (
-    <main>
+    <Wrapper>
       <div>{left}</div>
       <div>{middle}</div>
       <div>{right}</div>
-    </main>
+    </Wrapper>
   );
 }
 

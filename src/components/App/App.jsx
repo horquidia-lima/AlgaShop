@@ -9,9 +9,13 @@ function App() {
       <Container>
         <AppHeader />
         <AppContainer
-          left={<div>productos disponibles</div>}
-          middle={<div>su lista de compras</div>}
-          right={<div>estatisticas</div>}
+          left={
+            <div style={{ backgroundColor: "red" }}>productos disponibles</div>
+          }
+          middle={
+            <div style={{ backgroundColor: "green" }}>su lista de compras</div>
+          }
+          right={<div style={{ backgroundColor: "blue" }}>estatisticas</div>}
         />
       </Container>
     </Wrapper>
